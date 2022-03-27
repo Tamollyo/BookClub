@@ -1,14 +1,16 @@
 # Book Club
 
-## Date: 3/27/2022
+#### Date: 3/27/2022
 
 ### By: Molly Obermeier
 
-#### [Website](https://obermeiermol.myportfolio.com/) | [GitHub](https://github.com/Tamollyo/BookClub) | [LinkedIn](https://www.linkedin.com/in/marie-obermeier-6b6b03158/)
+#### [Website](https://obermeiermol.myportfolio.com/) | [GitHub](https://github.com/Tamollyo) | [LinkedIn](https://www.linkedin.com/in/marie-obermeier-6b6b03158/)
 
 ---
 
 ### **_Description_**
+
+[Trello](https://trello.com/b/yADplCP5/book-club) | [GitHub Repo](https://github.com/Tamollyo/BookClub)
 
 #### A book club for avid readers. Add your favorite books by genre and keep yourself up to date!
 
@@ -45,6 +47,10 @@
 ##### Wireframes
 
 ![Wireframe](assets/img/ERDPractice2.png)
+
+---
+
+### **_Pseudo Code_**
 
 ---
 
