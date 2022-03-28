@@ -10,6 +10,8 @@ router.get('/genre/:gid/books', controllers.getBooksByGenreId)
 
 router.get('/book/:bid', controllers.getBookById)
 
+router.post('/book', controllers.createBook)
+
 router.post('/review', controllers.createReview)
 
 module.exports = router
