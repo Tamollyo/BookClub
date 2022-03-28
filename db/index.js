@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 let MONGODB_URI = 'mongodb://127.0.0.1:27017/booksDatabase'
 
 mongoose
-  .connect(MONGODB_URI, { useUnifiedTopology: true, usedNewUrlParser: true })
+  .connect(MONGODB_URI)
   .then(() => {
     console.log('connected to MongoDB')
   })
