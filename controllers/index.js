@@ -81,16 +81,6 @@ const getBooksByGenreId = async (req, res) => {
   } catch (error) {
     return res.status(500).send(error.message)
   }
-  // try {
-  //   const genre = await Genre.findById(req.params.gid)
-  //   let books = []
-  //   for await (const bid of genre.books) {
-  //     books.push(await Book.findById(bid))
-  //   }
-  //   return res.status(201).json(books)
-  // } catch (error) {
-  //   return res.status(500).send(error.message)
-  // }
 }
 
 const createReview = async (req, res) => {}
