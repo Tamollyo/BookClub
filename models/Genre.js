@@ -10,4 +10,4 @@ const Genre = new Schema(
   { timestamps: true }
 )
 
-module.exports = mongoose.model('database', Genre)
+module.exports = Genre

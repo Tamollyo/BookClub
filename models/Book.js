@@ -6,9 +6,10 @@ const Book = new Schema(
     name: { type: String, required: true },
     author: { type: String, required: true },
     description: { type: String, required: true },
-    image: { type: String, required: true }
+    image: { type: String, required: true },
+    genre: [{ type: Schema.Types.ObjectId, ref: 'Genre', required: true }]
   },
   { timestamps: true }
 )
 
-module.exports = mongoose.model('database', Book)
+module.exports = Book
