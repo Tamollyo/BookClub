@@ -7,7 +7,7 @@ const Book = new Schema(
     author: { type: String, required: true },
     description: { type: String, required: true },
     image: { type: String, required: true },
-    genre: [{ type: Schema.Types.ObjectId, ref: 'Genre', required: true }]
+    genre: { type: Schema.Types.ObjectId, ref: 'Genre', required: true }
   },
   { timestamps: true }
 )

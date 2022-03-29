@@ -6,13 +6,13 @@ router.get('/genre', controllers.getGenre)
 
 router.get('/genre/:gid', controllers.getGenreById)
 
-// router.get('/genre/:gid/book', controllers.getBooksByGenreId)
+router.get('/genre/:gid/book', controllers.getBooksByGenreId)
 
 router.get('/book', controllers.getBook)
 
 router.get('/book/:bid', controllers.getBookById)
 
-// router.put('/book/:bid', controllers.updateBook)
+router.put('/book/:bid', controllers.updateBook)
 
 router.delete('/book/:bid', controllers.deleteBook)
 

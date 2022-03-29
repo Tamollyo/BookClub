@@ -1,3 +1,4 @@
+const { json } = require('express/lib/response')
 const { Genre, Book } = require('../models/index')
 
 const getGenre = async (req, res) => {
@@ -41,33 +42,25 @@ const getBookById = async (req, res) => {
 
 const createBook = async (req, res) => {
   try {
-    const bookId = req.body.book
-    const book = await Book.findById(bookId)
-    await Book.findByIdAndUpdate(bookId, {
-      details: [book.id]
-    })
+    const book = await new Book(req.body)
+    await book.save()
+    return res.status(201).json({ book })
   } catch (error) {
     return res.status(500).send(error.message)
   }
 }
 
-// const updateBook = async (req, res) => {
-//   try {
-//     const { bid } = req.params
-//     console.log(bid)
-//     await Book.findByIdAndUpdate(bid, req.body, { new: true }, (err, book) => {
-//       if (err) {
-//         return res.status(500).send(err)
-//       }
-//       // if (!book) {
-//       //   res.status(500).send('Book not found!')
-//       // }
-//       return res.status(200).json(book)
-//     })
-//   } catch (error) {
-//     return res.status(500).send(error.message)
-//   }
-// }
+const updateBook = async (req, res) => {
+  console.log(req.params)
+  try {
+    const { bid } = req.params
+    console.log(bid)
+    const book = await Book.findByIdAndUpdate(bid, req.body, { new: true })
+    res.send({ book })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
 
 const deleteBook = async (req, res) => {
   try {
@@ -81,30 +74,34 @@ const deleteBook = async (req, res) => {
   }
 }
 
-// const getBooksByGenreId = async (req, res) => {
-//   try {
-//     const genre = await Genre.findById(req.params.gid)
-//     let books = []
-//     for await (const bookId of genre.books) {
-//       let bookList = await Book.findById(bookId)
-//       console.log(bookList, 'WYAO SJSKLJDFD')
-//       books.push(bookList)
-//     }
-//     return res.status(201).json(books)
-//   } catch (error) {
-//     return res.status(500).send(error.message)
-//   }
-// }
+const getBooksByGenreId = async (req, res) => {
+  try {
+    let books = await Book.find({ genre: req.params.gid }).exec()
+    return res.status(201).json(books)
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+  // try {
+  //   const genre = await Genre.findById(req.params.gid)
+  //   let books = []
+  //   for await (const bid of genre.books) {
+  //     books.push(await Book.findById(bid))
+  //   }
+  //   return res.status(201).json(books)
+  // } catch (error) {
+  //   return res.status(500).send(error.message)
+  // }
+}
 
 const createReview = async (req, res) => {}
 
 module.exports = {
   getGenre,
+  updateBook,
   getGenreById,
-  // getBooksByGenreId,
+  getBooksByGenreId,
   getBook,
   getBookById,
-  // updateBook,
   deleteBook,
   createBook,
   createReview
