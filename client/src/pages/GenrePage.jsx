@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import Book from '../components/Book'
 
@@ -9,7 +9,11 @@ const Genre = (props) => {
   const BASE_URL = 'http://localhost:3001/api'
 
   let { gid } = useParams()
+  let navigate = useNavigate()
 
+  const showBook = ( book ) => {
+    navigate(`${book._id}`)
+  }
   console.log(props)
 
   useEffect(() => {
@@ -20,24 +24,24 @@ const Genre = (props) => {
       setBooks(response.data)
     }
     getBooksByGenre()
-  }, [])
+  
+}, [])
 
-  // const deleteBook = async (gid) => {
-  //   await axios
-  //     .delete(`${BASE_URL}/genre/${gid}/book`)
-  //     .then(function(response) {
-  //       getBooksByGenre()
-  //     })
-  // }
+// const deleteBook = async (gid) => {
+//   await axios
+//     .delete(`${BASE_URL}/genre/${gid}/book`)
+//     .then(function(response) {
+//       getBooksByGenre()
+//     })
+// }
 
   return(
     <div>
       <div className='GenreGrid'>
         {books.map((book) => (
-            <Book key={book._id}{...book} />
+            <Book key={book._id}{...book}/>
         ))}
       </div>
-
     </div>
   )
 }
