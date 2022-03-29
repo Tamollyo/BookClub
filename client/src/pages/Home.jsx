@@ -1,35 +1,34 @@
-import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
-import GenrePage from './GenrePage'
-// import BookPage from './BookPage'
+import axios from "axios"
+import { useState, useEffect } from "react"
+import { Link } from 'react-router-dom'
+import Genre from '../components/Genre'
+
 
 const Home = () => {
+  
   const [genres, setGenres] = useState([])
-  let navigate = useNavigate()
+  const BASE_URL = 'http://localhost:3001/api'
 
-  useEffect(() => {
-    const getGenres = async () => {
-      const response = await axios.get('/genre/:gid')
+  useEffect(async () => {
+      const response = await axios.get(
+        `${BASE_URL}/genre`
+      )
       console.log(response)
-      setGenres(response)
-    }
-    getGenres()
+      setGenres(response.data)
   }, [])
-
-  const showGenre = (genreId) => {
-    navigate(`/api/genre/${gid}`)
-  }
 
   return (
     <div>
-      <GenrePage
-        key={genre.id}
-        type={genre.type}
-        description={genre.description}
-        image={genre.image}
-        onClick={() => showGenre(genre.id)}
-      />
+      <div>
+        <h1>GENRE</h1>
+      </div>
+      <section>
+        {genres.map((genre) => (
+          <Link to={`/genre/${genre._id}`} key={genre._id}>
+            <Genre key={genre._id}{...genre} />
+          </Link> 
+        ))}
+      </section>
     </div>
   )
 }

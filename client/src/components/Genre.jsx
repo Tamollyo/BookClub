@@ -1,13 +1,11 @@
-import { process_params } from 'express/lib/router'
-import Book from './Books'
+import Book from './Book'
 
-const Genre = ({ bookGenre }) => {
+const Genre = ({type, description, image}) => {
   return (
     <div>
-      <h3>{bookGenre.title}</h3>
-      {props.books.map((book) => {
-        return <Book title={book.title} description={book.description} image={book.image}/>
-      })}
+    <h1>{type}</h1>
+    <img src={image} alt={`genre`} />
+    <h4>{description}</h4>
     </div>
   )
 }

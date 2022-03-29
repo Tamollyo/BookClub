@@ -95,7 +95,8 @@ const main = async () => {
       name: 'Treasure3',
       author: 'molly',
       description: 'Adventure book',
-      image: 'wow',
+      image:
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcontent.instructables.com%2FORIG%2FF3Y%2FJH65%2FIR9E8KTR%2FF3YJH65IR9E8KTR.jpg%3Fframe%3D1%26width%3D2100&f=1&nofb=1',
       genre: genreAdventure._id
     },
     {
