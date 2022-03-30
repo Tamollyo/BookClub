@@ -230,6 +230,33 @@ const main = async () => {
       image: 'https://posterspy.com/wp-content/uploads/2015/02/life-of-pi.jpg',
       read: 'unread',
       genre: genreAdventure._id
+    },
+    {
+      name: 'Nervous People and Other Satires',
+      author: 'Mikhail Zoshchenko',
+      description: `Typical targets of Zoshchenko's satire are the Soviet bureaucracy, crowded conditions in communal apartments, marital infidelities and the rapid turnover in marriage partners, and "the petty-bourgeois mode of life, with its adulterous episodes, lying, and similar nonsense."`,
+      image:
+        'https://i.pinimg.com/originals/66/76/d3/6676d306765624428caeda64500e4a37.jpg',
+      read: 'unread',
+      genre: genreSatire._id
+    },
+    {
+      name: 'Nervous People and Other Satires',
+      author: 'Mikhail Zoshchenko',
+      description: `Typical targets of Zoshchenko's satire are the Soviet bureaucracy, crowded conditions in communal apartments, marital infidelities and the rapid turnover in marriage partners, and "the petty-bourgeois mode of life, with its adulterous episodes, lying, and similar nonsense."`,
+      image:
+        'https://i.pinimg.com/originals/66/76/d3/6676d306765624428caeda64500e4a37.jpg',
+      read: 'unread',
+      genre: genreSatire._id
+    },
+    {
+      name: 'Billy Summers',
+      author: 'Stephen King',
+      description: `Billy Summers is a man in a room with a gun. He’s a killer for hire and the best in the business. But he’ll do the job only if the target is a truly bad guy. And now Billy wants out. But first there is one last hit.`,
+      image:
+        'https://imagesvc.meredithcorp.io/v3/mm/image?url=https:%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2021%2F01%2F27%2FBilly-Summers-2000.jpg',
+      read: 'unread',
+      genre: genreSatire._id
     }
   ]
   await Book.insertMany(books)
