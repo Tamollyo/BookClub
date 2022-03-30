@@ -20,9 +20,9 @@ const Home = () => {
   return (
     <div>
       <div>
-        <h1>GENRE</h1>
+        <h4>Select a Genre, then add your favorite books!</h4>
       </div>
-      <section>
+      <section className='genreGrid'>
         {genres.map((genre) => (
           <Link to={`/genre/${genre._id}`} key={genre._id}>
             <Genre key={genre._id}{...genre} />
