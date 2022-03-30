@@ -24,7 +24,7 @@ const Genre = (props) => {
   }
 
   const handleChange = () => {
-    
+
   }
 
   useEffect(() => {
@@ -41,11 +41,11 @@ const deleteBook = async (bid) => {
 
   return(
     <div>
-      <div className='GenreGrid'>
+      <section className='bookGrid'>
         {books.map((book) => (
             <Book key={book._id}{...book} deleteBook={deleteBook}/>
         ))}
-      </div>
+      </section>
     </div>
   )
 }

@@ -133,18 +133,22 @@ const main = async () => {
 
   const books = [
     {
-      name: 'Treasure',
-      author: 'molly',
-      description: 'fiction book',
-      image: 'wow',
-      genre: genreOther._id
+      name: 'Wool',
+      author: 'Hugh Howey',
+      description:
+        "Thousands of them have lived underground. They've lived there so long, there are only legends about people living anywhere else. Such a life requires rules. Strict rules. There are things that must not be discussed. Like going outside.",
+      image:
+        'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
+      genre: genreDystopian._id
     },
     {
-      name: 'Treasure2',
-      author: 'molly',
-      description: 'fiction book',
-      image: 'wow',
-      genre: genreWestern._id
+      name: 'The Silent Patient',
+      author: 'Alex Michaelides',
+      description:
+        "The Silent Patient is a shocking psychological thriller of a woman's act of violence against her husband―and of the therapist obsessed with uncovering her motive. Alicia Berenson's life is seemingly perfect.",
+      image:
+        'https://bookpipeline.com/wp-content/uploads/sites/4/2020/02/The-Silent-Patient.jpg',
+      genre: genreThriller._id
     },
     {
       name: 'Treasure3',
@@ -155,25 +159,31 @@ const main = async () => {
       genre: genreAdventure._id
     },
     {
-      name: 'Treasure4',
-      author: 'molly',
-      description: 'fiction book',
-      image: 'wow',
-      genre: genreAdventure._id
+      name: 'Go Tell the Bees That I Am Gone',
+      author: 'Diana Gabaldon',
+      description:
+        'The past may seem the safest place to be . . . but it is the most dangerous time to be alive. . . .',
+      image:
+        'http://www.dianagabaldon.com/wordpress/wp-content/uploads/2021/04/2021-04-15-BEES-PRH-US-cover-220x334.png',
+      genre: genreHistFic._id
     },
     {
-      name: 'Treasure5',
-      author: 'molly',
-      description: 'Mystery book',
-      image: 'wow',
-      genre: genreAdventure._id
+      name: 'Where the Crawdads Sing',
+      author: 'Delia Owens',
+      description:
+        'Where the Crawdads Sing is at once an exquisite ode to the natural world, a heartbreaking coming-of-age story, and a surprising tale of possible murder.',
+      image:
+        'https://www.picclickimg.com/d/l400/pict/144441267771_/Where-the-Crawdads-Sing.jpg',
+      genre: genreOther._id
     },
     {
-      name: 'Treasure6',
-      author: 'molly',
-      description: 'horror book',
-      image: 'wow',
-      genre: genreHorror._id
+      name: 'The Eye of the World',
+      author: 'Robert Jordan',
+      description:
+        'The Eye of the World is actually a pool of untainted saidin, created over three thousand years ago. Two of the Forsaken—ancient wielders of the One Power, sworn to the Shadow and imprisoned since the Breaking of the World—appear and try to claim the Eye.',
+      image:
+        'https://i.pinimg.com/originals/cf/d7/00/cfd70068c1b79909250b174f89544e98.jpg',
+      genre: genreFantasy._id
     }
   ]
   await Book.insertMany(books)

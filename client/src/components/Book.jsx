@@ -2,11 +2,11 @@
 const Book = ({_id, name, author, description, image, deleteBook}) => {
 
   return (
-    <div>
+    <div className='book'>
       <h1>{name}</h1>
       <h2>{author}</h2>
       <img src={image} alt={`book`} />
-      <h4>{description}</h4>
+      <p>{description}</p>
       <button onClick={() => deleteBook(_id)}>Delete Book</button>
     </div>
   )
