@@ -139,6 +139,7 @@ const main = async () => {
         "Thousands of them have lived underground. They've lived there so long, there are only legends about people living anywhere else. Such a life requires rules. Strict rules. There are things that must not be discussed. Like going outside.",
       image:
         'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
+      read: 'unread',
       genre: genreDystopian._id
     },
     {
@@ -148,14 +149,17 @@ const main = async () => {
         "The Silent Patient is a shocking psychological thriller of a woman's act of violence against her husband―and of the therapist obsessed with uncovering her motive. Alicia Berenson's life is seemingly perfect.",
       image:
         'https://bookpipeline.com/wp-content/uploads/sites/4/2020/02/The-Silent-Patient.jpg',
+      read: 'unread',
       genre: genreThriller._id
     },
     {
-      name: 'Treasure3',
-      author: 'molly',
-      description: 'Adventure book',
+      name: 'Into the Wild',
+      author: 'Jon Krakauer',
+      description:
+        'Adventure bookn April 1992 a young man from a well-to-do family hitchhiked to Alaska and walked alone into the wilderness north of Mt. McKinley. He had given $25,000 in savings to charity, abandoned his car and most of his possessions, burned all the cash in his wallet, and invented a new life for himself.',
       image:
-        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcontent.instructables.com%2FORIG%2FF3Y%2FJH65%2FIR9E8KTR%2FF3YJH65IR9E8KTR.jpg%3Fframe%3D1%26width%3D2100&f=1&nofb=1',
+        'https://media.movieassets.com/static/images/items/movies/posters/1ef7c09d50c89d8150e7e8fc91f21d2d.jpg',
+      read: 'unread',
       genre: genreAdventure._id
     },
     {
@@ -165,6 +169,7 @@ const main = async () => {
         'The past may seem the safest place to be . . . but it is the most dangerous time to be alive. . . .',
       image:
         'http://www.dianagabaldon.com/wordpress/wp-content/uploads/2021/04/2021-04-15-BEES-PRH-US-cover-220x334.png',
+      read: 'unread',
       genre: genreHistFic._id
     },
     {
@@ -174,6 +179,7 @@ const main = async () => {
         'Where the Crawdads Sing is at once an exquisite ode to the natural world, a heartbreaking coming-of-age story, and a surprising tale of possible murder.',
       image:
         'https://www.picclickimg.com/d/l400/pict/144441267771_/Where-the-Crawdads-Sing.jpg',
+      read: 'unread',
       genre: genreOther._id
     },
     {
@@ -183,6 +189,7 @@ const main = async () => {
         'The Eye of the World is actually a pool of untainted saidin, created over three thousand years ago. Two of the Forsaken—ancient wielders of the One Power, sworn to the Shadow and imprisoned since the Breaking of the World—appear and try to claim the Eye.',
       image:
         'https://i.pinimg.com/originals/cf/d7/00/cfd70068c1b79909250b174f89544e98.jpg',
+      read: 'unread',
       genre: genreFantasy._id
     }
   ]

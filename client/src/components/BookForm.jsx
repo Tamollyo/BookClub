@@ -1,27 +1,21 @@
-import { useNavigate } from 'react-router-dom'
-import { useState } from 'react'
 
-
-const BookForm = (props) => {
-  
-  let navigate = useNavigate()
-
-  const [newBook, setNewbook] = useState({})
-
-  const handleSubmit = (e) => {
-    props.addBook(e)
-    navigate('/home')
-
-  }
+const BookForm = ({newBook, handleChange, createBook}) => {
 
   return (
     <div>
-      <h1>Create a Book</h1>
-      <form onSubmit={ handleSubmit }>
-        <input type="text" value={newBook.name} onChange={ props.handleChange} name={'name'} placeholder={'title'} required/>
-        <input type="text" value={newBook.img} onChange={ props.handleChange} name={'img'} placeholder={'image'} required/>
-        <input type="text-area" value={newBook.description} onChange={ props.handleChange} name={'description'} placeholder={'description'} required/>
-        <input type="text" value={newBook.genre} onChange={ props.handleChange} name={'genre'} placeholder={'genre'} required/>
+      <h1>Add a book to your library!</h1>
+      <form onSubmit={createBook}>
+        <input type="text" value={newBook.name} onChange={ handleChange} name={'name'} placeholder={'title'} required/>
+        <input type="text" value={newBook.author} onChange={ handleChange} name={'author'} placeholder={'author'} required/>
+        <input type="text" value={newBook.img} onChange={ handleChange} name={'image'} placeholder={'image'} required/>
+        <input type="text" value={newBook.read} onChange={ handleChange} name={'read'} placeholder={'read'} required/>
+        <input type="text-area" value={newBook.description} onChange={ handleChange} name={'description'} placeholder={'description'} required/>
+        {/* <input type="text" onChange={ handleChange} name={'genre'} list='genre' placeholder={'genre'}/>
+          <datalist id='genre'>
+              <option value='Adventure' label="Fiction"></option>
+              <option value='Fiction'></option>
+              <option value='Adventure'></option>
+          </datalist> */}
         <button type='submit'>Submit</button>
       </form>
     </div>
