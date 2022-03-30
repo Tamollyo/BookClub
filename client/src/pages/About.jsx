@@ -3,9 +3,9 @@ const About = () => {
 
   return (
     <div>
-        <h4> BOOK CLUBBIN </h4>
+        <h3> BOOK CLUBBIN </h3>
         <h5>Welcome to the book club! 
-          Add your favorite books, keep track of if you've read them or not, develope a full library! </h5>
+          Add your favorite books, keep track of if you've read them or not, develop a full library! </h5>
     </div>
   )
 }
