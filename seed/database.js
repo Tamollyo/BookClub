@@ -241,13 +241,13 @@ const main = async () => {
       genre: genreSatire._id
     },
     {
-      name: 'Nervous People and Other Satires',
-      author: 'Mikhail Zoshchenko',
-      description: `Typical targets of Zoshchenko's satire are the Soviet bureaucracy, crowded conditions in communal apartments, marital infidelities and the rapid turnover in marriage partners, and "the petty-bourgeois mode of life, with its adulterous episodes, lying, and similar nonsense."`,
+      name: "The Hitchhiker's Guide to the Galaxy",
+      author: 'Douglas Adams',
+      description: `The Hitch Hiker's Guide "A towel is about the most massively useful thing an interstellar hitchhiker can have" and a galaxy-full of fellow travellers: Zaphod Beeblebrox - the two-headed, three-armed ex-hippie and totally out to lunch president of the galaxy`,
       image:
-        'https://i.pinimg.com/originals/66/76/d3/6676d306765624428caeda64500e4a37.jpg',
+        'https://www.greatschools.org/gk/wp-content/uploads/2016/03/The-Hitchhikers-Guide-to-the-Galaxy.jpg',
       read: 'unread',
-      genre: genreSatire._id
+      genre: genreComedy._id
     },
     {
       name: 'Billy Summers',
