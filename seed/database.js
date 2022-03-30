@@ -191,6 +191,45 @@ const main = async () => {
         'https://i.pinimg.com/originals/cf/d7/00/cfd70068c1b79909250b174f89544e98.jpg',
       read: 'unread',
       genre: genreFantasy._id
+    },
+    {
+      name: 'The Book Theif',
+      author: 'Markus Zusak',
+      description:
+        'It is 1939. Nazi Germany. The country is holding its breath. Death has never been busier, and will be busier still.',
+      image:
+        'https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/cover/9781784162122_2.jpg',
+      read: 'unread',
+      genre: genreHistFic._id
+    },
+    {
+      name: 'The Giving Tree',
+      author: 'Markus Zusak',
+      description:
+        'So begins a story of unforgettable perception, beautifully written and illustrated by the gifted and versatile Shel Silverstein.',
+      image:
+        'https://3boysandadog.com/wp-content/uploads/2015/02/giving-tree.jpg',
+      read: 'unread',
+      genre: genreFantasy._id
+    },
+    {
+      name: 'The Alchemist',
+      author: 'Paulo Coelho',
+      description:
+        'This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago, who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids.',
+      image:
+        'https://www.daimanuel.com/wp-content/uploads/2016/05/the-alchemist-book-cover.jpg',
+      read: 'unread',
+      genre: genreFantasy._id
+    },
+    {
+      name: 'Life of Pi',
+      author: 'Yann Martel',
+      description:
+        'Life of Pi is a fantasy adventure novel by Yann Martel published in 2001. The protagonist, Piscine Molitor "Pi" Patel, a Tamil boy from Pondicherry, explores issues of spirituality and practicality from an early age. ',
+      image: 'https://posterspy.com/wp-content/uploads/2015/02/life-of-pi.jpg',
+      read: 'unread',
+      genre: genreAdventure._id
     }
   ]
   await Book.insertMany(books)
