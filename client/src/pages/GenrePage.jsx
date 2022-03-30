@@ -23,6 +23,10 @@ const Genre = (props) => {
     setBooks(response.data)
   }
 
+  const handleChange = () => {
+    
+  }
+
   useEffect(() => {
     getBooksByGenre()
   }, [])
