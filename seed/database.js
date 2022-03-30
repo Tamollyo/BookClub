@@ -259,13 +259,13 @@ const main = async () => {
       genre: genreCrime._id
     },
     {
-      name: 'People We Meet on Vacation',
-      author: 'Emily Henry',
-      description: `Poppy and Alex have been best friends since forever, and each year they take a vacation together—a glorious, uncomplicated summer holiday. Except that last year it got complicated, and this year it’s weirdsies for all.`,
+      name: 'The Final Girl Support Group',
+      author: 'Grady Hendrix',
+      description: `The one who fought back, defeated the killer, and avenged her friends. The one who emerges bloodied but victorious. But after the sirens fade and the audience moves on, what happens to her?`,
       image:
-        'https://img1.od-cdn.com/ImageType-100/1191-1/%7B71CB6AF0-3092-4033-9ECA-A053995D364C%7DImg100.jpg',
+        'https://www.rollingstone.com/wp-content/uploads/2021/07/FinalGirlSupportGroup-.jpg',
       read: 'unread',
-      genre: genreRomance._id
+      genre: genreHorror._id
     },
     {
       name: 'People We Meet on Vacation',
@@ -313,6 +313,24 @@ const main = async () => {
         'https://s.yimg.com/uu/api/res/1.2/ldgb1IT8SRRqLFDXztiwrQ--~B/aD0yMDAwO3c9MTMxNjtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/entertainment_weekly_785/0a4ba7bd376402475bdc79f60a5217a8',
       read: 'unread',
       genre: genreDystopian._id
+    },
+    {
+      name: 'Klara and the Sun',
+      author: 'Kazuo Ishiguro',
+      description: `From her place in the store, Klara, an Artificial Friend with outstanding observational qualities, watches carefully the behavior of those who come in to browse, and of those who pass on the street outside.`,
+      image:
+        'https://s.yimg.com/uu/api/res/1.2/ldgb1IT8SRRqLFDXztiwrQ--~B/aD0yMDAwO3c9MTMxNjtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/entertainment_weekly_785/0a4ba7bd376402475bdc79f60a5217a8',
+      read: 'unread',
+      genre: genreDystopian._id
+    },
+    {
+      name: 'Dune: Book 1',
+      author: 'Frank Herbert',
+      description: `Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness. `,
+      image:
+        'https://i1.wp.com/www.tor.com/wp-content/uploads/2019/07/Dune-cover-1.jpg?type=vertical&ssl=1',
+      read: 'unread',
+      genre: genreScienceFiction._id
     }
   ]
   await Book.insertMany(books)
