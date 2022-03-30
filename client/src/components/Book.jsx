@@ -1,5 +1,5 @@
 
-const Book = ({_id, name, author, description, image, read, deleteBook, updateBook}) => {
+const Book = ({_id, name, author, description, image, read, deleteBook, updateBook, updateBookAgain}) => {
 
   return (
     <div className='book'>
@@ -10,6 +10,7 @@ const Book = ({_id, name, author, description, image, read, deleteBook, updateBo
       <h4>read? {read}</h4>
       <button onClick={() => deleteBook(_id)}>Delete Book</button>
       <button onClick={() => updateBook(_id)}>Read?</button>
+      <button onClick={() => updateBookAgain(_id)}>Unread?</button>
     </div>
   )
 }

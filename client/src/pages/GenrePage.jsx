@@ -60,9 +60,6 @@ const Genre = (props) => {
     })
   }
 
-
-
-
 const deleteBook = async (bid) => {
   const response = await axios
     .delete(`${BASE_URL}/book/${bid}`)
@@ -82,19 +79,28 @@ const updateBook = async (bid) => {
     })
 }
 
+const updateBookAgain = async (bid) => {
+  const response = await axios
+    .put(`${BASE_URL}/book/${bid}`, { read: 'Unread'})
+    .then(response => {
+      console.log(response.data, "response")
+      getBooksByGenre()
+    })
+}
+
   return(
     
     <div>
       <section>
         <BookForm 
           newBook={newBook}
-          createBook={creaeBook}
+          createBook={createBook}
           handleChange={handleChange}
         />
       </section>
       <section className='bookGrid'>
         {books.map((book) => (
-            <Book key={book._id}{...book} bid={book._id} deleteBook={deleteBook} updateBook={updateBook}/>
+            <Book key={book._id}{...book} bid={book._id} deleteBook={deleteBook} updateBook={updateBook} updateBookAgain={updateBookAgain}/>
         ))}
       </section>
 

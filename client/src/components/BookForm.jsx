@@ -8,14 +8,12 @@ const BookForm = ({newBook, handleChange, createBook}) => {
         <input type="text" value={newBook.name} onChange={ handleChange} name={'name'} placeholder={'title'} required/>
         <input type="text" value={newBook.author} onChange={ handleChange} name={'author'} placeholder={'author'} required/>
         <input type="text" value={newBook.img} onChange={ handleChange} name={'image'} placeholder={'image'} required/>
-        <input type="text" value={newBook.read} onChange={ handleChange} name={'read'} placeholder={'read'} required/>
+        <input type="text" value={newBook.read} onChange={ handleChange} name={'read'} placeholder={'read'} list='read?' required/>
+        <datalist id='read?'>
+              <option value='Read'>I have read the book</option>
+              <option value='Unread'>I have not read the book</option>
+          </datalist>
         <input type="text-area" value={newBook.description} onChange={ handleChange} name={'description'} placeholder={'description'} required/>
-        {/* <input type="text" onChange={ handleChange} name={'genre'} list='genre' placeholder={'genre'}/>
-          <datalist id='genre'>
-              <option value='Adventure' label="Fiction"></option>
-              <option value='Fiction'></option>
-              <option value='Adventure'></option>
-          </datalist> */}
         <button type='submit'>Submit</button>
       </form>
     </div>
