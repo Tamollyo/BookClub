@@ -6,51 +6,56 @@ console.log(Genre)
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-  const genreFiction = new Genre({
-    type: 'Fiction',
-    description: 'ficton Genre',
-    image: 'wow'
+  const genreAction = new Genre({
+    type: 'Action',
+    description:
+      'An action story is similar to adventure, and the protagonist usually takes a risky turn, which leads to desperate situations (including explosions, fight scenes, daring escapes, etc.).',
+    image: 'https://imgur.com/ePIkwsB'
   })
-  await genreFiction.save()
-
-  const genreRomance = new Genre({
-    type: 'Romance',
-    description: 'Romance Genre',
-    image: 'BowChicawow'
-  })
-  await genreRomance.save()
-
-  const genreDystopian = new Genre({
-    type: 'Dystopian',
-    description: 'Dystopian Genre',
-    image: 'BowChicawow'
-  })
-  await genreDystopian.save()
-
-  const genreScienceFic = new Genre({
-    type: 'ScienceFic',
-    description: 'ScienceFic Genre',
-    image: 'ScienceFic Image'
-  })
-  await genreScienceFic.save()
+  await genreAction.save()
 
   const genreAdventure = new Genre({
     type: 'Adventure',
-    description: 'Adventure Genre',
-    image: 'Adventure Image'
+    description:
+      'An adventure story is about a protagonist who journeys to epic or distant places to accomplish something. It can have many other genre elements included within it, because it is a very open genre.',
+    image: 'https://imgur.com/XmxAQaS'
   })
   await genreAdventure.save()
 
-  const genreMystery = new Genre({
-    type: 'Mystery',
-    description: 'Mystery Genre',
-    image: 'Mystery Image'
+  const genreComedy = new Genre({
+    type: 'Comedy',
+    description:
+      'Comedy is a story that tells about a series of funny, or comical events, intended to make the audience laugh. It is a very open genre, and thus crosses over with many other genres on a frequent basis.',
+    image: 'https://imgur.com/UnknqhY'
   })
-  await genreMystery.save()
+  await genreComedy.save()
+
+  const genreCrime = new Genre({
+    type: 'Crime & Mystery',
+    description:
+      'A crime story is often about a crime that is being committed or was committed, but can also be an account of a criminals life. A mystery story follows an investigator as they attempt to solve a puzzle (often a crime). ',
+    image: 'https://imgur.com/3czx3Nk'
+  })
+  await genreCrime.save()
+
+  const genreFantasy = new Genre({
+    type: 'Fantasy',
+    description:
+      'A fantasy story is about magic or supernatural forces, as opposed to technology as seen in science fiction.',
+    image: 'https://imgur.com/BSCmFjW'
+  })
+  await genreFantasy.save()
+
+  const genreHistorical = new Genre({
+    type: 'Historical',
+    description: 'A story about a real person or event. ',
+    image: 'https://imgur.com/D6qmlNR'
+  })
+  await genreHistorical.save()
 
   const genreHorror = new Genre({
     type: 'Horror',
-    description: 'Horror Genre',
+    description: 'A story about a real person or event. ',
     image: 'Horror Image'
   })
   await genreHorror.save()
