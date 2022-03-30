@@ -1,1 +1,32 @@
+body {
+  text-align: center;
+}
 
+.navBar {
+  background-color: #308c72;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  float: right;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #dcf2ea;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.navTitle {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #f2a444;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+}

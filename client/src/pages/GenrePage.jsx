@@ -16,30 +16,30 @@ const Genre = (props) => {
   }
   console.log(props)
 
-  useEffect(() => {
-    const getBooksByGenre = async () => {
-      const response = await axios.get(
-        `${BASE_URL}/genre/${gid}/book`
-      )
-      setBooks(response.data)
-    }
-    getBooksByGenre()
-  
-}, [])
+  const getBooksByGenre = async () => {
+    const response = await axios.get(
+      `${BASE_URL}/genre/${gid}/book`
+    )
+    setBooks(response.data)
+  }
 
-// const deleteBook = async (gid) => {
-//   await axios
-//     .delete(`${BASE_URL}/genre/${gid}/book`)
-//     .then(function(response) {
-//       getBooksByGenre()
-//     })
-// }
+  useEffect(() => {
+    getBooksByGenre()
+  }, [])
+
+const deleteBook = async (bid) => {
+  const response = await axios
+    .delete(`${BASE_URL}/book/:bid`)
+    setBooks(response.data)
+    // (response => {
+    //   getBooksByGenre()
+}
 
   return(
     <div>
       <div className='GenreGrid'>
         {books.map((book) => (
-            <Book key={book._id}{...book}/>
+            <Book key={book._id}{...book} deleteBook={deleteBook}/>
         ))}
       </div>
     </div>

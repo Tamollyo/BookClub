@@ -5,7 +5,6 @@ const Genre = ({type, description, image}) => {
     <div>
     <h1>{type}</h1>
     <img src={image} alt={`genre`} />
-    <h4>{description}</h4>
     </div>
   )
 }

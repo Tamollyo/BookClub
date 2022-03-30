@@ -4,13 +4,13 @@ const Nav = () => {
   return (
     <header>
       <nav>
-        <div>
-          <h1>Book Club</h1>
-        </div>
         <div className='navBar'>
-          <Link to='/'>Home</Link>
-          <Link to='./about'>About</Link>
-          <Link to='./newbook'>Add Book</Link>
+          <div className='navTitle'>
+            Book Club
+          </div>
+          <Link className='nav' to='/'>Home</Link>
+          <Link className='nav' to='./about'>About</Link>
+          <Link className='nav' to='./newbook'>Add Book</Link>
         </div>
       </nav>
     </header>
