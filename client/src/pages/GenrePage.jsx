@@ -88,7 +88,7 @@ const updateBook = async (bid) => {
       <section>
         <BookForm 
           newBook={newBook}
-          createBook={createBook}
+          createBook={creaeBook}
           handleChange={handleChange}
         />
       </section>
