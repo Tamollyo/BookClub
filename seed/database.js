@@ -256,7 +256,63 @@ const main = async () => {
       image:
         'https://imagesvc.meredithcorp.io/v3/mm/image?url=https:%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2021%2F01%2F27%2FBilly-Summers-2000.jpg',
       read: 'unread',
-      genre: genreSatire._id
+      genre: genreCrime._id
+    },
+    {
+      name: 'People We Meet on Vacation',
+      author: 'Emily Henry',
+      description: `Poppy and Alex have been best friends since forever, and each year they take a vacation together—a glorious, uncomplicated summer holiday. Except that last year it got complicated, and this year it’s weirdsies for all.`,
+      image:
+        'https://img1.od-cdn.com/ImageType-100/1191-1/%7B71CB6AF0-3092-4033-9ECA-A053995D364C%7DImg100.jpg',
+      read: 'unread',
+      genre: genreRomance._id
+    },
+    {
+      name: 'People We Meet on Vacation',
+      author: 'Emily Henry',
+      description: `Poppy and Alex have been best friends since forever, and each year they take a vacation together—a glorious, uncomplicated summer holiday. Except that last year it got complicated, and this year it’s weirdsies for all.`,
+      image:
+        'https://img1.od-cdn.com/ImageType-100/1191-1/%7B71CB6AF0-3092-4033-9ECA-A053995D364C%7DImg100.jpg',
+      read: 'unread',
+      genre: genreRomance._id
+    },
+    {
+      name: 'The Hobbit, or There and Back Again',
+      author: 'J.R.R. Tolkien',
+      description: `In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat:`,
+      image:
+        'https://i5.walmartimages.com/asr/0ea6502b-4cb2-4176-bfbf-63d0cb845909_1.77f6a15dcfb606189b287b4e156ec141.jpeg',
+      read: 'unread',
+      genre: genreAdventure._id
+    },
+    {
+      name: 'Crying in H Mart',
+      author: 'Michelle Zauner',
+      description: `An unflinching, powerful memoir about growing up Korean American, losing her mother, and forging her own identity.`,
+      image:
+        'https://louderthanwar.com/wp-content/uploads/2021/08/Crying-in-H-Mart-by-Michelle-Zauner-955x1536.jpg',
+      read: 'unread',
+      genre: genreOther._id
+    },
+    {
+      name: 'Project Hail Mary',
+      author: 'Andy Weir',
+      description: `A lone astronaut.
+      An impossible mission.
+      An ally he never imagined.`,
+      image:
+        'https://bookandfilmglobe.com/wp-content/uploads/2021/05/91Bd7P8UwxL.jpg',
+      read: 'unread',
+      genre: genreScienceFiction._id
+    },
+    {
+      name: 'Klara and the Sun',
+      author: 'Kazuo Ishiguro',
+      description: `From her place in the store, Klara, an Artificial Friend with outstanding observational qualities, watches carefully the behavior of those who come in to browse, and of those who pass on the street outside.`,
+      image:
+        'https://s.yimg.com/uu/api/res/1.2/ldgb1IT8SRRqLFDXztiwrQ--~B/aD0yMDAwO3c9MTMxNjtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/entertainment_weekly_785/0a4ba7bd376402475bdc79f60a5217a8',
+      read: 'unread',
+      genre: genreDystopian._id
     }
   ]
   await Book.insertMany(books)
