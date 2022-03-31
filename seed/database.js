@@ -375,6 +375,15 @@ const main = async () => {
         'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553102141i/43263680.jpg',
       read: 'unread',
       genre: genreAction._id
+    },
+    {
+      name: 'Where the Wild things',
+      author: 'Maurice Sendak',
+      description: `he story focuses on a young boy named Max who, after dressing in his wolf costume, wreaks such havoc through his household that he is sent to bed without his supper (after his mother calls him, "WILD THING!" to which he responds, "I'LL EAT YOU UP!").`,
+      image:
+        'https://is5-ssl.mzstatic.com/image/thumb/Video52/v4/4b/ee/20/4bee204b-4b5f-0d3e-0042-256f2c628bb6/source/900x900bb.jpg',
+      read: 'unread',
+      genre: genreFantasy._id
     }
   ]
   await Book.insertMany(books)
