@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(async () => {
       const response = await axios.get(
-        `/genre`
+        `/api/genre`
       )
       console.log(response)
       setGenres(response.data)
