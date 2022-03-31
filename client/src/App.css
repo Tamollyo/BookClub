@@ -78,6 +78,10 @@ a {
   color: #f2a444;
 }
 
+a:hover {
+  color: #308c72;
+}
+
 h1 {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 600;
@@ -85,7 +89,8 @@ h1 {
 
 h4,
 h5,
-h3 {
+h3,
+h2 {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 400;
 }

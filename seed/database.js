@@ -198,7 +198,7 @@ const main = async () => {
       description:
         'It is 1939. Nazi Germany. The country is holding its breath. Death has never been busier, and will be busier still.',
       image:
-        'https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/cover/9781784162122_2.jpg',
+        'https://media.npr.org/assets/artslife/books/2010/11/three-books-erskine/book-thief_custom-5556fa04c9c8b2854fecdce5f096940a892255db-s6-c10.jpg',
       read: 'unread',
       genre: genreHistFic._id
     },
@@ -306,13 +306,13 @@ const main = async () => {
       genre: genreScienceFiction._id
     },
     {
-      name: 'Klara and the Sun',
-      author: 'Kazuo Ishiguro',
-      description: `From her place in the store, Klara, an Artificial Friend with outstanding observational qualities, watches carefully the behavior of those who come in to browse, and of those who pass on the street outside.`,
+      name: 'Extreme North',
+      author: 'Bernd Brunner',
+      description: `Scholars and laymen alike have long projected their fantasies onto the great expanse of the global North, whether it be as a frozen no-man’s-land, an icy realm of marauding Vikings, or an unspoiled cradle of prehistoric human life.`,
       image:
-        'https://s.yimg.com/uu/api/res/1.2/ldgb1IT8SRRqLFDXztiwrQ--~B/aD0yMDAwO3c9MTMxNjtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/entertainment_weekly_785/0a4ba7bd376402475bdc79f60a5217a8',
+        'https://prodimage.images-bn.com/pimages/9780393881004_p0_v1_s1200x630.jpg',
       read: 'unread',
-      genre: genreDystopian._id
+      genre: genreHistorical._id
     },
     {
       name: 'Klara and the Sun',
@@ -331,6 +331,41 @@ const main = async () => {
         'https://i1.wp.com/www.tor.com/wp-content/uploads/2019/07/Dune-cover-1.jpg?type=vertical&ssl=1',
       read: 'unread',
       genre: genreScienceFiction._id
+    },
+    {
+      name: 'Cyberpunk: Outlaws and Hackers on the Computer Frontier',
+      author: 'Katie Hafner, John Markoff',
+      description: `Using the exploits of three international hackers, Cyberpunk provides a fascinating tour of a bizarre subculture populated by outlaws who penetrate even the most sensitive computer networks and wreak havoc on the information they find -- everything from bank accounts to military secrets.`,
+      image:
+        'https://images-eu.ssl-images-amazon.com/images/I/61BczibNcjL._SY346_.jpg',
+      read: 'unread',
+      genre: genreCyber._id
+    },
+    {
+      name: 'The Old Man and the Sea',
+      author: 'Ernest Hemingway',
+      description: `This short novel, already a modern classic, is the superbly told, tragic story of a Cuban fisherman in the Gulf Stream and the giant Marlin he kills and loses—`,
+      image: 'https://papermine.com/pub/5682408/media/5686515.jpg',
+      read: 'unread',
+      genre: genreCyber._id
+    },
+    {
+      name: 'The Stand',
+      author: 'Stephen King',
+      description: `When a man escapes from a biological testing facility, he sets in motion a deadly domino effect, spreading a mutated strain of the flu that will wipe out 99 percent of humanity within a few weeks.`,
+      image:
+        'https://antonysimpson.com/wp-content/uploads/2016/05/stephen-king-the-stand-book-cover.jpg',
+      read: 'unread',
+      genre: genreThriller._id
+    },
+    {
+      name: 'News of the World',
+      author: 'Paulette Jiles',
+      description: `In the wake of the Civil War, Captain Jefferson Kyle Kidd travels through northern Texas, giving live readings from newspapers to paying audiences hungry for news of the world.`,
+      image:
+        'https://superstarsbio.com/wp-content/uploads/2020/05/News-Of-The-World-poster.jpg',
+      read: 'unread',
+      genre: genreThriller._id
     }
   ]
   await Book.insertMany(books)
