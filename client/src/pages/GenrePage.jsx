@@ -100,7 +100,9 @@ const updateBookAgain = async (bid) => {
       </section>
       <section className='bookGrid'>
         {books.map((book) => (
+          <Link to={`/book/${book._id}`} key={book._id}>
             <Book key={book._id}{...book} bid={book._id} deleteBook={deleteBook} updateBook={updateBook} updateBookAgain={updateBookAgain}/>
+          </Link>
         ))}
       </section>
 

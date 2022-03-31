@@ -1,6 +1,6 @@
-import Book from './Book'
 
-const Genre = ({type, description, image}) => {
+
+const Genre = ({image}) => {
   return (
     <div>
     <img className='genreImg' src={image} alt={`genre`} />
