@@ -71,6 +71,13 @@ body {
   font-weight: 600;
 }
 
+a {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #f2a444;
+}
+
 h1 {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 600;
