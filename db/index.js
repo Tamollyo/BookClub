@@ -8,7 +8,7 @@ let dbUrl =
     : 'mongodb://127.0.0.1:27017/booksDatabase'
 
 mongoose
-  .connect(MONGODB_URI)
+  .connect(dbUrl)
   .then(() => {
     console.log('connected to MongoDB')
   })
