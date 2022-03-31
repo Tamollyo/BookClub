@@ -347,7 +347,7 @@ const main = async () => {
       description: `This short novel, already a modern classic, is the superbly told, tragic story of a Cuban fisherman in the Gulf Stream and the giant Marlin he kills and loses—`,
       image: 'https://papermine.com/pub/5682408/media/5686515.jpg',
       read: 'unread',
-      genre: genreCyber._id
+      genre: genreAdventure._id
     },
     {
       name: 'The Stand',
@@ -365,7 +365,16 @@ const main = async () => {
       image:
         'https://superstarsbio.com/wp-content/uploads/2020/05/News-Of-The-World-poster.jpg',
       read: 'unread',
-      genre: genreThriller._id
+      genre: genreWestern._id
+    },
+    {
+      name: 'The Ninth House',
+      author: 'Leigh Bardugo',
+      description: `But at her hospital bed, Alex is offered a second chance: to attend one of the world’s most prestigious universities on a full ride. What’s the catch, and why her?`,
+      image:
+        'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553102141i/43263680.jpg',
+      read: 'unread',
+      genre: genreAction._id
     }
   ]
   await Book.insertMany(books)
