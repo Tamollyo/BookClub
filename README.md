@@ -28,6 +28,8 @@
 
 ### **_Getting Started_**
 
+##### Time to create and keep track of your library.
+
 ##### Pick your favorite genre.
 
 ##### Add, create, update or delete a book.
@@ -50,17 +52,13 @@
 
 ![Wireframe](assets/img/ERDPractice2.png)
 
----
-
-### **_Pseudo Code_**
-
----
-
 ### **_Future Updates_**
 
 - Anything in light yellow will be past MVP and possibly a future update!
 - Login and save functionality
 - Update CSS
+- Add review section
+- rework sorting or have options in how to sort.
 
 ---
 
