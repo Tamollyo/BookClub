@@ -15,7 +15,7 @@ const Genre = (props) => {
 
   const getBooksByGenre = async () => {
     const response = await axios.get(
-      `${BASE_URL}/genre/${gid}/book`
+      `/genre/${gid}/book`
     )
     setBooks(response.data)
   }
@@ -45,7 +45,7 @@ const Genre = (props) => {
     e.preventDefault()
     console.log(newBook, "newbook")
     const response = await axios 
-      .post(`${BASE_URL}/book`, newBook)
+      .post(`/book`, newBook)
       .then(response => {
         console.log(response.data, "response")
         getBooksByGenre()
@@ -62,7 +62,7 @@ const Genre = (props) => {
 
 const deleteBook = async (bid) => {
   const response = await axios
-    .delete(`${BASE_URL}/book/${bid}`)
+    .delete(`/book/${bid}`)
     .then(response => {
       console.log(response.data, "response")
       getBooksByGenre()
@@ -71,7 +71,7 @@ const deleteBook = async (bid) => {
 
 const updateBook = async (bid) => {
   const response = await axios
-    .put(`${BASE_URL}/book/${bid}`, { read: 'Read'})
+    .put(`/book/${bid}`, { read: 'Read'})
     .then(response => {
       console.log(response.data, "response")
       getBooksByGenre()
@@ -80,7 +80,7 @@ const updateBook = async (bid) => {
 
 const updateBookAgain = async (bid) => {
   const response = await axios
-    .put(`${BASE_URL}/book/${bid}`, { read: 'Unread'})
+    .put(`/book/${bid}`, { read: 'Unread'})
     .then(response => {
       console.log(response.data, "response")
       getBooksByGenre()
