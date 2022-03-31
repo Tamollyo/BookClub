@@ -14,6 +14,8 @@
 
 #### A book club for avid readers. Add your favorite books by genre and keep yourself up to date!
 
+![ScreenShot](https://i.imgur.com/9nd1rAD.png)
+
 ---
 
 ### **_Technologies Used_**
@@ -34,7 +36,7 @@
 
 ---
 
-### **_Screenshots_**
+### **_Planning_**
 
 ##### ERD
 
