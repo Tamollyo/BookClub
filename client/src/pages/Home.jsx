@@ -7,8 +7,8 @@ import Genre from '../components/Genre'
 const Home = () => {
   
   const [genres, setGenres] = useState([])
-    // const BASE_URL = '/api'
-  const BASE_URL = 'http://localhost:3001/api'
+    const BASE_URL = '/api'
+  // const BASE_URL = 'http://localhost:3001/api'
 
   useEffect(async () => {
       const response = await axios.get(
