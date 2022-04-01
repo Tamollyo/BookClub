@@ -1,6 +1,7 @@
 const db = require('../db')
 const { Book } = require('../models')
 const { Genre } = require('../models')
+const { childSchemas } = require('../models/Book')
 console.log(Genre)
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
@@ -391,6 +392,8 @@ const main = async () => {
 
 const run = async () => {
   // await db.dropDatabase()
+  Book.deleteMany()
+  Genre.deleteMany()
   await main()
   db.close()
 }
