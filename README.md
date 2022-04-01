@@ -66,4 +66,14 @@
 
 ##### Images: [DuckDuckGo Search](http://www.duckduckgo.com)
 
+##### Book Descriptions: [GoodReads](https://www.goodreads.com/)
+
+##### Genre List: [Wikipedia](https://en.wikipedia.org/wiki/List_of_genres)
+
+##### Research: [W3 Schools](https://www.w3schools.com/)
+
+##### Research: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+##### Research: [Class Labs]('')
+
 ---
