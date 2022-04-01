@@ -8,6 +8,8 @@
 
 ---
 
+[Deployed App](https://bookcluapp.herokuapp.com/)
+
 ### **_Description_**
 
 [Trello](https://trello.com/b/yADplCP5/book-club) | [GitHub Repo](https://github.com/Tamollyo/BookClub)
