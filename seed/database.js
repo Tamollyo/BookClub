@@ -392,8 +392,8 @@ const main = async () => {
 
 const run = async () => {
   // await db.dropDatabase()
-  Book.deleteMany()
-  Genre.deleteMany()
+  await Book.deleteMany()
+  await Genre.deleteMany()
   await main()
   db.close()
 }
