@@ -2,9 +2,41 @@ body {
   text-align: center;
   background-color: #dcf2ea;
 }
+
+/* reference for animation: https://www.mockplus.com/blog/post/css-animation-examples */
 .navBar {
+  padding: 13px 20px 13px;
+  border-radius: 8px;
+  outline: 0;
+  border: 2px dashed #f2a444;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.navBar:after {
+  content: '';
   background-color: #308c72;
-  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.navBar:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .navBar {
+    padding: 20px 50px 30px;
+  }
 }
 
 .nav {

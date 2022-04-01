@@ -7,8 +7,8 @@ import BookForm from '../components/BookForm'
 const Genre = (props) => {
 
   const [books, setBooks] = useState([])
-  const BASE_URL = '/api'
-  // const BASE_URL = 'http://localhost:3001/api'
+  // const BASE_URL = '/api'
+  const BASE_URL = 'http://localhost:3001/api'
 
   let { gid } = useParams()
 
