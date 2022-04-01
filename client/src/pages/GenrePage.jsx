@@ -7,7 +7,8 @@ import BookForm from '../components/BookForm'
 const Genre = (props) => {
 
   const [books, setBooks] = useState([])
-  const BASE_URL = 'http://localhost:3001/api'
+  const BASE_URL = '/api'
+  // const BASE_URL = 'http://localhost:3001/api'
 
   let { gid } = useParams()
 
@@ -15,7 +16,7 @@ const Genre = (props) => {
 
   const getBooksByGenre = async () => {
     const response = await axios.get(
-      `/api/genre/${gid}/book`
+      `${BASE_URL}/genre/${gid}/book`
     )
     setBooks(response.data)
   }
@@ -45,7 +46,7 @@ const Genre = (props) => {
     e.preventDefault()
     console.log(newBook, "newbook")
     const response = await axios 
-      .post(`/api/book`, newBook)
+      .post(`${BASE_URL}/book`, newBook)
       .then(response => {
         console.log(response.data, "response")
         getBooksByGenre()
@@ -62,7 +63,7 @@ const Genre = (props) => {
 
 const deleteBook = async (bid) => {
   const response = await axios
-    .delete(`/api/book/${bid}`)
+    .delete(`${BASE_URL}/book/${bid}`)
     .then(response => {
       console.log(response.data, "response")
       getBooksByGenre()
@@ -71,7 +72,7 @@ const deleteBook = async (bid) => {
 
 const updateBook = async (bid) => {
   const response = await axios
-    .put(`/api/book/${bid}`, { read: 'Read'})
+    .put(`${BASE_URL}/book/${bid}`, { read: 'Read'})
     .then(response => {
       console.log(response.data, "response")
       getBooksByGenre()
@@ -80,7 +81,7 @@ const updateBook = async (bid) => {
 
 const updateBookAgain = async (bid) => {
   const response = await axios
-    .put(`/api/book/${bid}`, { read: 'Unread'})
+    .put(`${BASE_URL}/book/${bid}`, { read: 'Unread'})
     .then(response => {
       console.log(response.data, "response")
       getBooksByGenre()
